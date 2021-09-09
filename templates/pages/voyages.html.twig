@@ -4,10 +4,26 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th class="text-left" scope="col">Ville</th>
-                <th class="text-left" scope="col">Pays</th>
-                <th class="text-right" scope="col">Note</th>
-                <th class="text-center" scope="col">Date</th>
+                <th class="text-left" scope="col">
+                    Ville
+                    <a href="{{ path('voyage.sort', {champ:'ville', ordre:'ASC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('voyage.sort', {champ:'ville', ordre:'DESC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true">></a>                   
+                </th>
+                <th class="text-left" scope="col">
+                    Pays
+                    <a href="{{ path('voyage.sort', {champ:'pays', ordre:'ASC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('voyage.sort', {champ:'pays', ordre:'DESC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true">></a>
+                </th>
+                <th class="text-right" scope="col">
+                    Note
+                    <a href="{{ path('voyage.sort', {champ:'note', ordre:'ASC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('voyage.sort', {champ:'note', ordre:'DESC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true">></a>
+                </th>
+                <th class="text-center" scope="col">
+                    Date
+                    <a href="{{ path('voyage.sort', {champ:'datecreation', ordre:'ASC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('voyage.sort', {champ:'datecreation', ordre:'DESC'}) }}" class="btn btn-primary btn-sm " role="button" aria-pressed="true">></a>
+                </th>
             </tr>
         </thead>
         <tbody>
